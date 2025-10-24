@@ -94,29 +94,7 @@ body {
   }
 }
 
-/* Decorative curved bottom for desktop nav (only on wider screens) */
-@media (min-width: 821px) {
-  .site-nav {
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-  }
 
-  .site-nav::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -22px; /* how far the curve dips */
-    width: 120%;
-    height: 44px;
-    background: rgba(255, 255, 255, 0.85);
-    /* elliptical curve: widen the bottom corners to create an arc */
-    border-radius: 0 0 60% 60% / 0 0 100% 100%;
-    box-shadow: 0 8px 18px rgba(18, 36, 62, 0.06);
-    z-index: -1; /* sit beneath the nav */
-    pointer-events: none;
-  }
-}
 
 /* Small visual tweak when over hero: make nav semi-transparent for a nicer look */
 .hero + .site-nav,
