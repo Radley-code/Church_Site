@@ -3,11 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/style.css">
-     <link rel="stylesheet" href="fontawesome/css/all.min.css" media="all">
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" media="all" />
     <title>GraceLight Church| A light to the Nations</title>
   </head>
   <body>
+    <a id="top"></a>
+    <nav class="site-nav" role="navigation" aria-label="Main navigation">
+      <div class="nav-inner">
+        <a class="brand" href="#top">GraceLight Church</a>
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="primary-menu"
+          aria-label="Toggle navigation"
+        >
+          <span class="hamburger" aria-hidden="true"
+            ><i class="fas fa-bars"></i
+          ></span>
+        </button>
+        <ul id="primary-menu" class="nav-links">
+          <li><a href="#top">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#sermons">Sermons</a></li>
+          <li><a href="#ministries">Ministries</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#leadership">Leadership</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
     <header class="hero">
       <div class="overlay">
         <h1>GraceLight Church</h1>
@@ -28,78 +53,85 @@
       </p>
       <p class="pastor-signature">-Pastor David</p>
     </section>
-    <section class="sermons">
-  <h2>Latest Sermons</h2>
-  <div class="carousel">
-    <div class="sermon-card">
-      <h3>Walking in Grace</h3>
-      <p>Pastor David Miller • Oct 19, 2025</p>
-      <a href="#">Watch Now</a>
-    </div>
-    <div class="sermon-card">
-      <h3>Faith Over Fear</h3>
-      <p>Sarah Jenkins • Oct 12, 2025</p>
-      <a href="#">Watch Now</a>
-    </div>
-    <div class="sermon-card">
-      <h3>Rooted in the Word</h3>
-      <p>Michael Chen • Oct 5, 2025</p>
-      <a href="#">Watch Now</a>
-    </div>
-  </div>
-</section>
-<section class="ministries">
-  <h2>Our Ministries</h2>
-  <div class="ministry-grid">
-    <div class="ministry-card">
-      <i class="fas fa-users"></i>
-      <h3>Youth</h3>
-      <p>Empowering teens to grow in faith and build strong relationships.</p>
-      <a href="#">Learn More</a>
-    </div>
-    <div class="ministry-card">
-      <i class="fas fa-female"></i>
-      <h3>Women</h3>
-      <p>Creating a nurturing space for women to connect and grow spiritually.</p>
-      <a href="#">Learn More</a>
-    </div>
-    <div class="ministry-card">
-      <i class="fas fa-male"></i>
-      <h3>Men</h3>
-      <p>Building strong leaders through fellowship and discipleship.</p>
-      <a href="#">Learn More</a>
-    </div>
-    <div class="ministry-card">
-      <i class="fas fa-hand-holding-heart"></i>
-      <h3>Outreach</h3>
-      <p>Serving the community with love, compassion, and practical support.</p>
-      <a href="#">Learn More</a>
-    </div>
-    <div class="ministry-card">
-      <i class="fas fa-music"></i>
-      <h3>Music</h3>
-      <p>Leading worship through song, praise, and joyful expression.</p>
-      <a href="#">Learn More</a>
-    </div>
-  </div>
-</section>
-    <section class="services">
+    <section id="sermons" class="sermons">
+      <h2>Latest Sermons</h2>
+      <div class="carousel">
+        <div class="sermon-card">
+          <h3>Walking in Grace</h3>
+          <p>Pastor David Miller • Oct 19, 2025</p>
+          <a href="#">Watch Now</a>
+        </div>
+        <div class="sermon-card">
+          <h3>Faith Over Fear</h3>
+          <p>Sarah Jenkins • Oct 12, 2025</p>
+          <a href="#">Watch Now</a>
+        </div>
+        <div class="sermon-card">
+          <h3>Rooted in the Word</h3>
+          <p>Michael Chen • Oct 5, 2025</p>
+          <a href="#">Watch Now</a>
+        </div>
+      </div>
+    </section>
+    <section id="ministries" class="ministries">
+      <h2>Our Ministries</h2>
+      <div class="ministry-grid">
+        <div class="ministry-card">
+          <i class="fas fa-users"></i>
+          <h3>Youth</h3>
+          <p>
+            Empowering teens to grow in faith and build strong relationships.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="ministry-card">
+          <i class="fas fa-female"></i>
+          <h3>Women</h3>
+          <p>
+            Creating a nurturing space for women to connect and grow
+            spiritually.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="ministry-card">
+          <i class="fas fa-male"></i>
+          <h3>Men</h3>
+          <p>Building strong leaders through fellowship and discipleship.</p>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="ministry-card">
+          <i class="fas fa-hand-holding-heart"></i>
+          <h3>Outreach</h3>
+          <p>
+            Serving the community with love, compassion, and practical support.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="ministry-card">
+          <i class="fas fa-music"></i>
+          <h3>Music</h3>
+          <p>Leading worship through song, praise, and joyful expression.</p>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+    </section>
+    <section id="services" class="services">
       <h2>Our Services</h2>
       <div class="service-grid">
-      <div class="service-card">
-        <h3>Sunday Worship</h3>
-        <p>
-          Join us every Sunday at 10 AM for a time of worship, prayer, and
-          inspiring messages.
-        </p>
-      </div>
-      <div class="service-card">
-        <h3>Bible Study</h3>
-        <p>
-          Deepen your understanding of the Word of God with our weekly Bible
-          study sessions on Wednesdays at 7 PM.
-        </p>
-      </div>
+        <div class="service-card">
+          <h3>Sunday Worship</h3>
+          <p>
+            Join us every Sunday at 10 AM for a time of worship, prayer, and
+            inspiring messages.
+          </p>
+        </div>
+        <div class="service-card">
+          <h3>Bible Study</h3>
+          <p>
+            Deepen your understanding of the Word of God with our weekly Bible
+            study sessions on Wednesdays at 7 PM.
+          </p>
+        </div>
       </div>
       <div class="service-card">
         <h3>Youth Ministry</h3>
@@ -109,75 +141,95 @@
         </p>
       </div>
     </section>
-  <section class="events">
-  <h2>Upcoming Events</h2>
-  <p class="section-subtitle">Join us as we gather, grow, and serve together.</p>
+    <section id="events" class="events">
+      <h2>Upcoming Events</h2>
+      <p class="section-subtitle">
+        Join us as we gather, grow, and serve together.
+      </p>
 
-  <div class="event-list">
-    <div class="event-card">
-      <div class="event-date">
-        <span class="day">27</span>
-        <span class="month">OCT</span>
-      </div>
-      <div class="event-info">
-        <h3>Community Worship Night</h3>
-        <p class="event-time">Friday • 6:00 PM</p>
-        <p class="event-desc">An evening of praise, prayer, and fellowship under the stars. All are welcome!</p>
-        <a href="#" class="event-cta">Learn More</a>
-      </div>
-    </div>
+      <div class="event-list">
+        <div class="event-card">
+          <div class="event-date">
+            <span class="day">27</span>
+            <span class="month">OCT</span>
+          </div>
+          <div class="event-info">
+            <h3>Community Worship Night</h3>
+            <p class="event-time">Friday • 6:00 PM</p>
+            <p class="event-desc">
+              An evening of praise, prayer, and fellowship under the stars. All
+              are welcome!
+            </p>
+            <a href="#" class="event-cta">Learn More</a>
+          </div>
+        </div>
 
-    <div class="event-card">
-      <div class="event-date">
-        <span class="day">30</span>
-        <span class="month">OCT</span>
-      </div>
-      <div class="event-info">
-        <h3>Youth Retreat: Rooted & Rising</h3>
-        <p class="event-time">Monday – Wednesday</p>
-        <p class="event-desc">A 3-day retreat for teens to grow in faith, build friendships, and encounter God.</p>
-        <a href="#" class="event-cta">Register Now</a>
-      </div>
-    </div>
+        <div class="event-card">
+          <div class="event-date">
+            <span class="day">30</span>
+            <span class="month">OCT</span>
+          </div>
+          <div class="event-info">
+            <h3>Youth Retreat: Rooted & Rising</h3>
+            <p class="event-time">Monday – Wednesday</p>
+            <p class="event-desc">
+              A 3-day retreat for teens to grow in faith, build friendships, and
+              encounter God.
+            </p>
+            <a href="#" class="event-cta">Register Now</a>
+          </div>
+        </div>
 
-    <div class="event-card">
-      <div class="event-date">
-        <span class="day">02</span>
-        <span class="month">NOV</span>
+        <div class="event-card">
+          <div class="event-date">
+            <span class="day">02</span>
+            <span class="month">NOV</span>
+          </div>
+          <div class="event-info">
+            <h3>GraceLight Outreach Day</h3>
+            <p class="event-time">Saturday • 9:00 AM</p>
+            <p class="event-desc">
+              Join us as we serve our city with love—food drives, visits, and
+              prayer walks.
+            </p>
+            <a href="#" class="event-cta">Get Involved</a>
+          </div>
+        </div>
       </div>
-      <div class="event-info">
-        <h3>GraceLight Outreach Day</h3>
-        <p class="event-time">Saturday • 9:00 AM</p>
-        <p class="event-desc">Join us as we serve our city with love—food drives, visits, and prayer walks.</p>
-        <a href="#" class="event-cta">Get Involved</a>
+    </section>
+    <section id="leadership" class="leadership">
+      <h2>Meet Our Leadership Team</h2>
+      <div class="leaders">
+        <div class="leader-card">
+          <img src="pastor-david.jpg" alt="Pastor David Miller" />
+          <h3>Pastor David Miller</h3>
+          <p><strong>Senior Pastor</strong></p>
+          <p>
+            Serving GraceLight Church for over 20 years, with a heart for
+            worship and a love for the Word.
+          </p>
+        </div>
+        <div class="leader-card">
+          <img src="sarah-jenkins.jpg" alt="Sarah Jenkins" />
+          <h3>Sarah Jenkins</h3>
+          <p><strong>Worship Leader</strong></p>
+          <p>
+            Known for her uplifting spirit and dynamic worship team, cultivating
+            a nurturing environment.
+          </p>
+        </div>
+        <div class="leader-card">
+          <img src="michael-chen.jpg" alt="Michael Chen" />
+          <h3>Michael Chen</h3>
+          <p><strong>Youth Ministry Director</strong></p>
+          <p>
+            Focused on mentoring and discipleship, helping teens grow in faith
+            and build strong relationships.
+          </p>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
-  <section class="leadership">
-  <h2>Meet Our Leadership Team</h2>
-  <div class="leaders">
-    <div class="leader-card">
-      <img src="pastor-david.jpg" alt="Pastor David Miller" />
-      <h3>Pastor David Miller</h3>
-      <p><strong>Senior Pastor</strong></p>
-      <p>Serving GraceLight Church for over 20 years, with a heart for worship and a love for the Word.</p>
-    </div>
-    <div class="leader-card">
-      <img src="sarah-jenkins.jpg" alt="Sarah Jenkins" />
-      <h3>Sarah Jenkins</h3>
-      <p><strong>Worship Leader</strong></p>
-      <p>Known for her uplifting spirit and dynamic worship team, cultivating a nurturing environment.</p>
-    </div>
-    <div class="leader-card">
-      <img src="michael-chen.jpg" alt="Michael Chen" />
-      <h3>Michael Chen</h3>
-      <p><strong>Youth Ministry Director</strong></p>
-      <p>Focused on mentoring and discipleship, helping teens grow in faith and build strong relationships.</p>
-    </div>
-  </div>
-</section>
-    <section class="contact">
+    </section>
+    <section id="contact" class="contact">
       <h2>Contact Us</h2>
       <form action="">
         <label for="name">Name:</label>
@@ -191,16 +243,12 @@
 
         <button type="submit">Send Message</button>
       </form>
-      <div class="call-us">
-
-      </div>
+      <div class="call-us"></div>
     </section>
-<footer>
-    <p>&copy; 2025 GraceLight Church. All rights reserved.</p>
-    <div class="social-icons">
-        
-    </div>
-</footer>
-
+    <footer>
+      <p>&copy; 2025 GraceLight Church. All rights reserved.</p>
+      <div class="social-icons"></div>
+    </footer>
+    <script src="./assets/script.js" defer></script>
   </body>
 </html>
