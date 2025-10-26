@@ -1,3 +1,9 @@
+
+  window.addEventListener("load", () => {
+    document.getElementById("loader").style.display = "none";
+  });
+
+
 // Small, accessible hamburger toggle for the site navigation
 (function () {
   "use strict";
