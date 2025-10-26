@@ -84,3 +84,31 @@
     }
   });
 })();
+
+
+// Smooth scroll for anchor links
+document.addEventListener("DOMContentLoaded", function () {
+  const OFFSET = 70; // Offset for fixed header
+    const links = document.querySelectorAll('a[href^="#"]:not([href="#"])');
+    links.forEach(link => {
+        link.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href").substring(1);
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                const elementPosition = targetElement.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - OFFSET;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: "smooth"
+                });
+            }   
+        });
+    });
+}   ); 
+AOS.init({
+  duration: 800,
+  easing: 'slide',
+  once: true
+});

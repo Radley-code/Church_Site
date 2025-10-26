@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/style.css" />
     <link rel="stylesheet" href="fontawesome/css/all.min.css" media="all" />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <title>GraceLight Church| A light to the Nations</title>
   </head>
   <body>
@@ -72,7 +74,12 @@
       </div>
     </header>
 
-    <section class="welcome">
+    <section
+      class="welcome"
+      data-aos="fade-down"
+      data-aos-duration="900"
+      data-aos-easing="ease-out-cubic"
+    >
       <h2>Welcome to GraceLight Church</h2>
       <p>
         We are a vibrant and loving community dedicated to sharing the light of
@@ -83,7 +90,13 @@
       </p>
       <p class="pastor-signature">-Pastor David</p>
     </section>
-    <section id="sermons" class="sermons">
+    <section
+      id="sermons"
+      class="sermons"
+      data-aos="zoom-in-up"
+      data-aos-duration="900"
+      data-aos-easing="ease-out-cubic"
+    >
       <h2>Latest Sermons</h2>
       <div class="carousel">
         <div class="sermon-card">
@@ -103,7 +116,13 @@
         </div>
       </div>
     </section>
-    <section id="ministries" class="ministries">
+    <section
+      id="ministries"
+      class="ministries"
+      data-aos="fade-up"
+      data-aos-duration="900"
+      data-aos-easing="ease-out-cubic"
+    >
       <h2>Our Ministries</h2>
       <div class="ministry-grid">
         <div class="ministry-card">
@@ -145,34 +164,45 @@
         </div>
       </div>
     </section>
-    <section id="services" class="services">
+    <section
+      id="services"
+      class="services"
+      data-aos="flip-left"
+      data-aos-duration="900"
+      data-aos-easing="ease-out-cubic"
+    >
       <h2>Our Services</h2>
       <div class="service-grid">
         <div class="service-card">
-          <h3>Sunday Worship  <i class="fas fa-music"></i></h3>
+          <h3>Sunday Worship <i class="fas fa-music"></i></h3>
           <p>
             Join us every Sunday at 10 AM for a time of worship, prayer, and
             inspiring messages.
           </p>
         </div>
         <div class="service-card">
-          <h3>Bible Study  <i class="fas fa-bible"></i></h3>
+          <h3>Bible Study <i class="fas fa-bible"></i></h3>
           <p>
             Deepen your understanding of the Word of God with our weekly Bible
             study sessions on Wednesdays at 7 PM.
           </p>
         </div>
-        
       </div>
       <div class="service-card">
-        <h3>Youth Ministry  <i class="fas fa-user-group"></i></h3>
+        <h3>Youth Ministry <i class="fas fa-user-group"></i></h3>
         <p>
           Engaging activities and spiritual growth opportunities for our youth
           every Friday at 6 PM.
         </p>
       </div>
     </section>
-    <section id="events" class="events">
+    <section
+      id="events"
+      class="events"
+      data-aos="slide-up"
+      data-aos-duration="900"
+      data-aos-easing="ease-out-cubic"
+    >
       <h2>Upcoming Events</h2>
       <p class="section-subtitle">
         Join us as we gather, grow, and serve together.
@@ -228,7 +258,13 @@
         </div>
       </div>
     </section>
-    <section id="leadership" class="leadership">
+    <section
+      id="leadership"
+      class="leadership"
+      data-aos="fade-up"
+      data-aos-duration="900"
+      data-aos-easing="ease-out-cubic"
+    >
       <h2>Meet Our Leadership Team</h2>
       <div class="leaders">
         <div class="leader-card">
@@ -260,21 +296,55 @@
         </div>
       </div>
     </section>
-    <section id="contact" class="contact">
-      <h2>Contact Us</h2>
-      <form action="">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
+    <section
+      class="contact"
+      data-aos="zoom-in"
+      data-aos-duration="900"
+      data-aos-easing="ease-out-cubic"
+    >
+      <h2>Contact GraceLight Church</h2>
+      <div class="contact-grid">
+        <!-- Map -->
+        <div class="contact-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0194567890123!2d-122.41941548468123!3d37.77492977975967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5b6c1234%3A0x123456789abcdef0!2s123%20Church%20St%2C%20San%20Francisco%2C%20CA%2094103%2C%20USA!5e0!3m2!1sen!2s!4v1600000000000!5m2!1sen!2s"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          >
+          </iframe>
+        </div>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
+        <!-- Info + Form -->
+        <div class="contact-details">
+          <div class="contact-info">
+            <h3>Get in Touch</h3>
+            <p>
+              We are always happy to hear from you. Whether you have questions,
+              prayer requests, or just want to learn more about GraceLight
+              Church, feel free to reach out!
+            </p>
+            <p>
+              <strong>📍 Our Location:</strong> 123 Church St., Spiritual City,
+              SE 12345
+            </p>
+            <p><strong>📞</strong> (123) 456-7890</p>
+            <p><strong>✉</strong> info@gracelight.org</p>
+            <p><strong>🌐</strong> www.gracelight.org</p>
+          </div>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-
-        <button type="submit">Send Message</button>
-      </form>
-      <div class="call-us"></div>
+          <form class="contact-form">
+            <h3>Send Us a Message</h3>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <input type="text" placeholder="Subject" required />
+            <textarea rows="5" placeholder="Message" required></textarea>
+            <button type="submit">Submit Message</button>
+          </form>
+        </div>
+      </div>
     </section>
     <footer>
       <p>&copy; 2025 GraceLight Church. All rights reserved.</p>
