@@ -113,11 +113,9 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 }   ); 
-AOS.init({
-  duration: 800,
-  easing: 'slide',
-  once: true
-});
+// Initialize AOS (Animate On Scroll) library
+
+
 
 function nobackend(){
   alert("This feature is not available in the demo version of the site.");
