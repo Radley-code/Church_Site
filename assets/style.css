@@ -6,8 +6,10 @@ body {
 
 #loader {
   position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: #1e3a5f;
   display: flex;
   align-items: center;
@@ -25,7 +27,9 @@ body {
 }
 
 @keyframes spin {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 /* ====== Navigation ====== */
 /* Navbar styling */
@@ -142,7 +146,7 @@ body {
 
 /* Hero Section */
 .hero {
-  background: url("/image/hero-church.webp") center/cover no-repeat;
+  background: url("../image/hero-church.webp") center/cover no-repeat;
   height: 60vh;
   position: relative;
   display: flex;
@@ -322,7 +326,7 @@ body {
   padding: 60px 20px;
   color: #ffffff;
   text-align: center;
-  background: url("/image/church-service.webp") center/cover no-repeat;
+  background: url("../image/church-service.webp") center/cover no-repeat;
   z-index: 1;
   overflow: hidden;
 }
@@ -604,7 +608,6 @@ body {
   font-size: 15px;
 }
 
-
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -672,21 +675,72 @@ body {
 }
 
 @media (max-width: 820px) {
+  /* Hero section adjustments */
+  .hero {
+    height: 50vh;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero .tagline {
+    font-size: 18px;
+  }
+
+  /* Services section adjustments */
+  .service-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 0 10px;
+  }
+
+  .service-card {
+    padding: 20px;
+  }
+
+  /* Ministry section adjustments */
+  .ministry-grid {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+
+  /* Event section adjustments */
+  .event-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .event-date {
+    margin-bottom: 15px;
+  }
+
+  .event-info {
+    margin-left: 0;
+  }
+
+  /* Contact section adjustments */
   .contact-grid {
     grid-template-columns: 1fr;
   }
+
   .contact-form input,
   .contact-form textarea {
     font-size: 16px;
-    width: 90%;
+    width: 100%;
+    box-sizing: border-box;
   }
+
   .contact-form button {
-    width: 90%;
+    width: 100%;
   }
+
   .contact-map iframe {
     height: 300px;
   }
 
+  /* Footer adjustments */
   .footer-grid {
     grid-template-columns: 1fr;
     text-align: center;
@@ -696,12 +750,29 @@ body {
   .links-block {
     display: none;
   }
+
   .footer-grid {
     gap: 20px;
   }
+
   .leaders {
-  gap: 20px;
-}
+    gap: 20px;
+  }
+
+  /* Welcome section adjustments */
+  .welcome {
+    padding: 40px 15px;
+  }
+
+  .welcome p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  /* Sermons section adjustments */
+  .sermon-card {
+    flex: 0 0 85%;
+  }
 }
 
 /* //Animations */
