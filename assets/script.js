@@ -118,3 +118,7 @@ AOS.init({
   easing: 'slide',
   once: true
 });
+
+function nobackend(){
+  alert("This feature is not available in the demo version of the site.");
+}
