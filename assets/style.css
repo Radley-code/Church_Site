@@ -792,3 +792,8 @@ body {
   animation: fadeUp 0.6s ease forwards;
   animation-delay: var(--delay, 0s);
 }
+
+[data-aos]{
+  opacity: 1 !important;
+  transform: none !important;
+}
