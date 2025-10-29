@@ -19,7 +19,7 @@ A spiritually warm, mobile-optimized demo site for GraceLight Church—built to 
 
 ## 🚀 Live Preview
 
-[🔗 Visit GraceLight Church Demo](https://gracelight-church.netlify.app/)i
+[🔗 Visit GraceLight Church Demo](https://gracelight-church.netlify.app/)
 
 > Hosted on Netlify
 
